@@ -1,10 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
+      rel="stylesheet"
+    />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style></style>
+    <style>
+      section {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+      }
+      form {
+        padding-left: 13em;
+      }
+      aside {
+        font-size: 18px;
+        align-self: center;
+      }
+      form h4 {
+        padding: 15px 10px;
+      }
+      .required input {
+        text-decoration: none;
+        display: inline-block;
+        padding: 12px 20px;
+        margin: 10px 5px;
+        border: 1px solid #144673;
+        border-radius: 8px;
+        font-size: 18px;
+      }
+      #message {
+        width: 493px;
+        height: 100px;
+      }
+      input[type='button'] {
+        width: 530px;
+        background: #144673;
+        color: white;
+      }
+      .inline {
+        display: flex;
+        width: 100%;
+        align-items: baseline;
+      }
+      i {
+        padding: 10px;
+      }
+    </style>
   </head>
-  <body></body>
+  <body>
+    <section>
+      <form>
+        <h4>
+          SEND US AN EMAIL
+        </h4>
+        <div class="required">
+          <input
+            type="text"
+            name="firstName"
+            placeholder="First Name"
+            required
+          />
+          <input
+            type="text"
+            name="lastName"
+            placeholder="Last Name"
+            required
+          /><br />
+          <input type="email" required placeholder="Email" required />
+          <input
+            type="tel"
+            required
+            placeholder="Phone Number"
+            required
+          /><br />
+          <input type="text" id="message" placeholder="Message" /><br />
+          <input type="button" value="Submit Now" />
+        </div>
+      </form>
+      <aside>
+        <h3>CONTACT INFO</h3>
+        <div class="inline">
+          <i class="fas fa-map-marker-alt"></i>
+          <p>
+            Eko Atlantic, Lagos State Nigeria
+          </p>
+        </div>
+        <div class="inline">
+          <i class="fas fa-phone"></i>
+          <p>+234(0)803-333-3333</p>
+        </div>
+        <div class="inline">
+          <i class="far far fa-envelope"></i>
+          <a href="">info@hotelfranz.com</a>
+        </div>
+        <div>
+          <i class="fab fa-facebook-square"></i>
+          <i class="fab fa-twitter-square"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-linkedin"></i>
+        </div>
+      </aside>
+    </section>
+  </body>
 </html>
